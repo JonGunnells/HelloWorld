@@ -26,7 +26,7 @@ public class Person {
 
 }
 
-public class Person {
+public class Employee {
     String name = "Dwight";
     String job = "AssistantToTheRegionalManager";
     boolean wearsGlasses = true;
