@@ -8,10 +8,16 @@ public class Person {
     boolean isAlive;
     Person[] family = new Person [familySize];
 
+    public Person(){
+
+    }
+
     public Person(String name, int age, boolean isAlive) {
         this.name = name;
         this.age = age;
         this.isAlive = isAlive;
+
+
 
     }
 
