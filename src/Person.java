@@ -1,7 +1,7 @@
-/**
- * Created by jonathangunnells on 5/16/16.
- */
-public class Person {
+import java.util.Arrays;
+
+
+public class Person implements Comparable {
     static int familySize = 10;
     String name;
     int age;
@@ -27,9 +27,9 @@ public class Person {
     }
 
     public void setName(String newName) {
-        if (isValidName(newName)) {
+        //if (isValidName(newName)) {
             name = newName;
-        }
+       // }
     }
 
     public int getAge() {
@@ -55,6 +55,21 @@ public class Person {
         return newName.contains(" ");
     }
 
+    @Override
+    public String toString() {
+        return "Person{" +
+                "name='" + name + '\'' +
+                ", age=" + age +
+                ", isAlive=" + isAlive +
+                ", family=" + Arrays.toString(family) +
+                '}';
+    }
+
+    @Override
+    public int compareTo(Object o) {
+        Person otherPerson = (Person) o;
+        return this.name.compareTo(otherPerson.name);
+    }
 }
 
 

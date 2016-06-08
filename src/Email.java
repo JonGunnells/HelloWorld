@@ -9,6 +9,8 @@ public class Email {
     String destination;
     int time;
 
+
+
     public Email(Person aurthor, String subject, String body, String destination, int time) {
         this.author = author;
         this.subject = body;
@@ -24,3 +26,4 @@ public class Email {
         this.time = time;
     }
 }
+
